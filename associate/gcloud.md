@@ -18,3 +18,6 @@
 
 [OAuth2](./gcloud-oauth.md)
 
+## Projects
+
+[Projects](./gcloud-projects.md)
