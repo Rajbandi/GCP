@@ -1,8 +1,12 @@
+
 ## GCloud shell commands for IAM
 
 ### Roles
 
 * **Grantable roles**
+
+This command displays the list of grantable roles for a resource. The resource can be referenced either via the full resource name or via a URI. User can then add IAM policy bindings to grant the roles.
+
 > List IAM grantable roles for a resource
 > 
 > gcloud iam list-grantable-roles RESOURCE [--filter=EXPRESSION] [--page-size=PAGE_SIZE; default=100] [GCLOUD_WIDE_FLAG …]
@@ -17,6 +21,9 @@
 > gcloud iam list-testable-permissions RESOURCE [--filter=EXPRESSION] [GCLOUD_WIDE_FLAG …]
 > 
 * **List roles**
+
+Testable permissions mean the permissions that user can add or remove in a role at a given resource. The resource can be referenced either via the full resource name or via a URI.
+
 > List the roles defined at a parent organization or a project
 > 
 >  gcloud iam roles list [--show-deleted] [--organization=ORGANIZATION     | --project=PROJECT_ID] [--filter=EXPRESSION] [--limit=LIMIT] [--sort-by=[FIELD,…]] [GCLOUD_WIDE_FLAG …]
@@ -75,6 +82,8 @@
 >  gcloud iam service-accounts remove-iam-policy-binding SERVICE_ACCOUNT --member=MEMBER --role=ROLE [--all     | --condition=[KEY=VALUE,…]     | --condition-from-file=CONDITION_FROM_FILE] [GCLOUD_WIDE_FLAG …]
 >   
 #### Service Accounts
+Create and manipulate IAM service accounts. A service account is a special Google account that belongs to your application or a VM, instead of to an individual end user. Your application uses the service account to call the Google API of a service, so that the users aren't directly involved.
+
 * **List Service Accounts**
 > List all of a project's service accounts
 >  
@@ -133,5 +142,10 @@ Manage service account keys
 >  
 >  gcloud iam service-accounts keys delete KEY-ID --iam-account=IAM_ACCOUNT [GCLOUD_WIDE_FLAG …]
 >  
+* **Sign a blob**
+> Sign a blob with a managed service account key
+>  
+>  gcloud iam service-accounts sign-blob INPUT-FILE OUTPUT-FILE --iam-account=IAM_ACCOUNT [GCLOUD_WIDE_FLAG …]
+>   
 
 
