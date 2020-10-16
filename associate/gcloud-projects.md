@@ -1,4 +1,4 @@
-### Organisations
+## Organisations
 
 Lets you create and manage Cloud Organizations. Google Cloud Platform resources form a hierarchy with Organizations at the root. Organizations contain projects, and Projects contain the remaining Google Cloud Platform resources.
 
@@ -47,7 +47,7 @@ Lets you create and manage Cloud Organizations. Google Cloud Platform resources 
 > 
 
 
-### Projects
+## Projects
 
 The gcloud projects group lets you create and manage IAM policies for projects on the Google Cloud Platform. 
 
@@ -144,7 +144,7 @@ The gcloud projects group lets you create and manage IAM policies for projects o
 > gcloud projects get-ancestors-iam-policy PROJECT_ID [--filter=EXPRESSION] [--limit=LIMIT] [--page-size=PAGE_SIZE] [--sort-by=[FIELD,…]] [GCLOUD_WIDE_FLAG …]
 >  
 
-### Services
+## Services
 
 The gcloud services command group lets you manage your project's access to services provided by Google and third parties.
 
