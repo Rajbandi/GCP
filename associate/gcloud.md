@@ -4,7 +4,7 @@
 	> 
 ## Cheat Sheet
 
-[Cheat Sheet](https://cloud.google.com/sdk/gcloud/reference/cheat-sheet)
+[Cheat Sheet](https://cloud.google.com/sdk/gcloud/reference/cheat-sheet){:target="_blank"}
 
 ## IAM
 
