@@ -148,7 +148,7 @@ Manage service account keys
 >  gcloud iam service-accounts sign-blob INPUT-FILE OUTPUT-FILE --iam-account=IAM_ACCOUNT [GCLOUD_WIDE_FLAG …]
 >   
 
-#### Identity groups
+### Identity groups
 
 Commands for managing Cloud Identity Groups.
 
@@ -176,7 +176,7 @@ Commands for managing Cloud Identity Groups.
 > gcloud identity groups delete EMAIL [GCLOUD_WIDE_FLAG …]
 >
 
-#### Identity Group Memberships
+### Identity Group Memberships
 
 Commands for managing Cloud Identity Groups Memberships.
 
